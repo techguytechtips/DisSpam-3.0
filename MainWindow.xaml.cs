@@ -40,6 +40,7 @@ namespace WPF_Project
                     }
                     SendKeys.SendWait(this.DisText.Text);
                     SendKeys.SendWait("{Enter}");
+                    SendKeys.SendWait("{Enter}");
                     try
                     {
                         await Task.Delay(Convert.ToInt32(this.Delay.Text));
@@ -67,6 +68,7 @@ namespace WPF_Project
                             break;
                         }
                         SendKeys.SendWait(this.DisText.Text);
+                        SendKeys.SendWait("{Enter}");
                         SendKeys.SendWait("{Enter}");
                         i++;
                         try
